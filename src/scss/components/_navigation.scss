@@ -1,0 +1,63 @@
+.navigation {
+    background-color: $white-color;
+    margin-bottom: 2rem;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+    &__header {
+        color: $primary-color;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+    &__list {
+        list-style: none;
+
+        display: flex;
+        align-items: center;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        text-decoration: none;
+        position: relative;
+
+        &.btn {
+            width: auto;
+        }
+
+        &--checkout .icon {
+            color: $primary-color;
+        }
+
+        &--checkout .badge {
+            position: absolute;
+            top: -0.5rem;
+            right: -1rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        &__container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: $border-radius;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+
+    width: 7.5rem;
+    height: 2rem;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &--primary {
+        background-color: $primary-color;
+        color: $white-color;
+    }
+
+    &--gray {
+        background-color: $dark-gray-color;
+        color: $black-color;
+    }
+
+    &--danger {
+        background-color: $danger-color;
+        color: $white-color;
+    }
+
+    &--success {
+        background-color: $success-color;
+        color: $white-color;
+    }
+}

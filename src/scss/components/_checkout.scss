@@ -1,0 +1,50 @@
+.checkout {
+    &__container {
+        overflow-x: auto;
+    }
+
+    &__table {
+        border-collapse: collapse;
+        min-width: 100%;
+        box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba($black-color, 0.1);
+        background-color: $white-color;
+
+        & thead tr {
+            background-color: $primary-color;
+            color: $white-color;
+            text-align: left;
+        }
+
+        & th,
+        & td {
+            border: 1px solid $dark-gray-color;
+            padding: 0.5rem 1rem;
+        }
+
+        &__td--amount {
+            text-align: right;
+        }
+
+        &__td--quantity {
+            text-align: center;
+
+            & .icon {
+                cursor: pointer;
+
+                &--decrement {
+                    color: $danger-color;
+                }
+
+                &--increment {
+                    color: $success-color;
+                }
+            }
+        }
+
+        &__td--remove-product {
+            color: $danger-color;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

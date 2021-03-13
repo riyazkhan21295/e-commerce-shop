@@ -1,0 +1,59 @@
+@import './scss/abstracts/variables';
+
+@import './scss/components/button';
+@import './scss/components/checkout';
+@import './scss/components/form';
+@import './scss/components/navigation';
+@import './scss/components/productDetail';
+@import './scss/components/products';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+
+    background: $gray-color;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.badge {
+    width: 1rem;
+    height: 1rem;
+    padding: 0.25rem;
+    font-size: 0.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge:empty {
+    display: none;
+}
+
+.badge--warning {
+    background-color: $warning-color;
+    color: $black-color;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
